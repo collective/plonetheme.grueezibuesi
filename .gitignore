@@ -30,3 +30,4 @@ report.html
 .tox/
 reports/
 # excludes
+.python-version
