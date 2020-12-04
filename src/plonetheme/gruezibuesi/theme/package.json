@@ -1,8 +1,28 @@
 {
-  "//": "Put here only theme dependencies, devDependencies should stay outside of the theme folder in the package root.",
   "name": "plonetheme.gruezibuesi",
   "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.1.1",
+    "postcss-cli": "^8.1.0",
+    "stylelint-config-twbs-bootstrap": "^2.1.0"
+  },
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^5.0.0-alpha3"
+  },
+  "scripts": {
+    "watch": "nodemon --watch styles/ --ext scss --exec \"npm run css-main\"",
+    "build": "npm-run-all css-compile-main css-prefix-main css-minify-main",
+    "css-main": "npm-run-all css-compile-main css-prefix-main css-minify-main",
+    "css-compile-main": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 styles/theme.scss -o styles/",
+    "css-prefix-main": "postcss --config postcss.config.js --replace \"styles/*.css\" \"!styles/*.min.css\"",
+    "css-minify-main": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output styles/theme.min.css styles/theme.css",
+    "css-lint": "stylelint \"scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache"
   }
 }
