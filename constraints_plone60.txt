@@ -1,3 +1,9 @@
--c https://dist.plone.org/release/5.2-latest/requirements.txt
-# setuptools==40.2.0
-# zc.buildout==2.13.2
+-c https://raw.githubusercontent.com/plone/buildout.coredev/6.0/requirements.txt
+
+# setuptools==50.3.0
+# zc.buildout==2.13.3
+# wheel
+
+# # Windows specific down here (has to be installed here, fails in buildout)
+# # Dependency of zope.sendmail:
+# pywin32 ; platform_system == 'Windows'
