@@ -1,10 +1,87 @@
-// @import "variables.colors.scss";
-// Plone specific variables & properties
-// @import "variables.properties";
-@import "variables";
+$primary: #EE4793;
+$secondary: #F3A4CB;
+$success: #94C83C;
+$info: #4DC4D4;
+$warning: #F7A803;
+
+$cap-bg: #f7d4e5;
+
+$enable-rounded:              true;
+$enable-shadows:              true;
+$enable-gradients:            false;
+
+$spacer: 2.0rem;
+$grid-gutter-width:           2rem;
+
+
+$body-bg:  #fff2f8;
+$headings-color:              $primary;
+
+$body-color:  #555;
+
+$border-radius:               1rem;
+
+#portal-header {
+    align-items: flex-end;
+    #portal-searchbox {
+        margin-left: 0;
+        #searchGadget {
+           width: unset;
+       }
+    
+    }
+}
+
+.searchButton.btn.btn-secondary {
+    border-radius: 0 $border-radius $border-radius 0 ;
+}
+
+#portal-anontools ul {
+    margin: 0.5rem;
+}
+
+.navbar {
+    border-radius: $border-radius $border-radius 0 0 ;
+}
+
+#mainnavigation #portal-globalnav-wrapper .navbar-nav li a {
+    padding: 0.75rem 1.5rem;
+}
+
+$breadcrumb-bg: $cap-bg;
+$breadcrumb-padding-y:              0.5rem;
+$breadcrumb-padding-x:              1rem;
+
+
 
 // Bootstrap
-@import "../barceloneta/barceloneta";
+@import "../node_modules/bootstrap/scss/mixins/border-radius";
 
-// barceloneta overrides
-@import "buesi";
+#plone-breadcrumb {
+    @include border-bottom-radius($border-radius);
+}
+
+
+
+
+$card-cap-bg: $cap-bg;
+
+// $font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
+
+$headings-font-family: Vibur, font-family-sans-serif;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                $font-size-base * 3;
+$h2-font-size:                $font-size-base * 2.5;
+// $h3-font-size:                $font-size-base * 1.75 !default;
+// $h4-font-size:                $font-size-base * 1.5 !default;
+
+
+
+// Barceloneta
+@import "../../../../plonetheme.barceloneta/scss/barceloneta";
+
+:root {
+    --bs-font-sans-serif: Itim;
+}
