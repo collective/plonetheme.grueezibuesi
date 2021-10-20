@@ -51,3 +51,7 @@ $h2-font-size:                $font-size-base * 2.5;
 #plone-breadcrumb {
     @include border-bottom-radius($border-radius);
 }
+#portal-header {
+    align-items: end;
+}
+
