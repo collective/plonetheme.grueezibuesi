@@ -39,3 +39,8 @@ $h2-font-size:                $font-size-base * 2.5;
 
 //// Styles
 
+// Search Button
+.searchButton.btn.btn-secondary {
+    border-radius: 0 $border-radius $border-radius 0 ;
+}
+
