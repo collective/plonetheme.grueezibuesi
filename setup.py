@@ -14,7 +14,7 @@ long_description = "\n\n".join(
 
 setup(
     name="plonetheme.grueezibuesi",
-    version="1.0a1",
+    version="2.0a1",
     description="A kitten inspired Plone Theme",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
