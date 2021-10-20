@@ -21,6 +21,15 @@ $breadcrumb-bg: $lighter-pink;
 $font-family-sans-serif: Itim, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $headings-font-family: Vibur;
 
+// Font colors
+$headings-color: $primary;
+$body-color: $medium-grey;
+
+// Font sizes
+$font-size-base:              1rem;
+$h1-font-size:                $font-size-base * 3;
+$h2-font-size:                $font-size-base * 2.5;
+
 
 //// Imports
 // Import barceloneta files from node_modules --load-path=node_modules
