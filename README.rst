@@ -2,7 +2,9 @@
 plonetheme.grueezibuesi
 =======================
 
-A kitten inspired theme for Plone 6
+A kitten inspired theme for Plone 6. 
+
+If you're wondering why the weird name...  "Grüezi Büsi" stands for "Hello Kitty" in Swiss German... somehow ;-)
 
 
 Plone 6 Classic theming based on
